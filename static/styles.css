@@ -1,0 +1,23 @@
+/* styles.css */
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+}

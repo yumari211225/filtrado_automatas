@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatas Web - Filtrado en Tablas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Interfaz Web - Filtrado en Tablas</h1>
+        <form action="/table" method="post">
+            <div class="form-group">
+                <label for="filter">Filtrar:</label>
+                <input type="text" id="filter" name="filter" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </form>
+        <div class="mt-4">
+            {{ table_html | safe }}
+        </div>
+    </div>
+</body>
+</html>
